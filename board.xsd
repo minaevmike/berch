@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="board">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="flights">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="flight">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="fromAirport">
+                      <xs:complexType>
+                        <xs:attribute name="city" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="startTimes">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="startTime">
+                            <xs:complexType>
+                              <xs:attribute name="plan" type="xs:string" use="required" />
+                              <xs:attribute name="forecast" type="xs:string" use="required" />
+                              <xs:attribute name="real" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="comeTimes">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="comeTime">
+                            <xs:complexType>
+                              <xs:attribute name="plan" type="xs:string" use="required" />
+                              <xs:attribute name="forecast" type="xs:string" use="required" />
+                              <xs:attribute name="real" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="changeCitys">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="changeDestAirpot">
+                            <xs:complexType>
+                              <xs:attribute name="city" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="number" type="xs:unsignedShort" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

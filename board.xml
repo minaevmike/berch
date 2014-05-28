@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="board.xsl"?>
+<board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="board.xsd">
+  <flights>
+  <flight number ="123">
+    <fromAirport city ="MCW"/>
+    <startTimes>
+      <startTime plan="12:34" forecast ="12:30" real ="12:35"/>
+    </startTimes>
+    <comeTimes>
+      <comeTime plan ="20:34" forecast ="20:30" real ="21:35"/>
+    </comeTimes>
+    <changeCitys>
+      <changeDestAirpot city =""/>
+    </changeCitys>
+  </flight>
+  <flight number ="2">
+    <fromAirport city ="MCW"/>
+    <startTimes>
+      <startTime plan="12:34" forecast ="12:30" real ="12:35"/>
+      <startTime plan="12:34" forecast ="12:30" real ="12:21"/>
+    </startTimes>
+    <comeTimes>
+      <comeTime plan ="20:34" forecast ="20:30" real ="21:35"/>
+    </comeTimes>
+    <changeCitys>
+      <changeDestAirpot city =""/>
+    </changeCitys>
+  </flight>
+  <flight number ="33">
+    <fromAirport city ="MCW"/>
+    <startTimes>
+      <startTime plan="12fsddsfsdfdsfdsfsd:34" forecast ="12:30" real ="12:35"/>
+    </startTimes>
+    <comeTimes>
+      <comeTime plan ="20:34" forecast ="20:30" real ="21:35"/>
+    </comeTimes>
+    <changeCitys>
+      <changeDestAirpot city =""/>
+    </changeCitys>
+  </flight>
+  <flight number ="423">
+    <fromAirport city ="MCW"/>
+    <startTimes>
+      <startTime plan="12:34" forecast ="12:30" real ="12:35"/>
+    </startTimes>
+    <comeTimes>
+      <comeTime plan ="20:34" forecast ="20:30" real ="21:35"/>
+    </comeTimes>
+    <changeCitys>
+      <changeDestAirpot city =""/>
+      <changeDestAirpot city ="STP"/>
+    </changeCitys>
+  </flight>
+  </flights>
+</board>
